@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration debug="false" scan="false">
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d [%thread] %-5level %logger{36} %X{sourceThread} %X{akkaSource} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<logger name="com.gearsofleo.testing" level="DEBUG"/>
+	<logger name="com.gearsofleo.platform.integration.gaming.testclient.netent3" level="DEBUG" />
+	
+	<root level="WARN">
+		<appender-ref ref="STDOUT" />
+	</root>
+	
+</configuration>
